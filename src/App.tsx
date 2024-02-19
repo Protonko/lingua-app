@@ -3,16 +3,17 @@ import {
   SafeAreaView,
   StatusBar,
 } from 'react-native'
-import {AppStack} from '@app/routes'
+import {NavigationContainer} from '@react-navigation/native'
+import {AppStack} from 'app/routes'
 
 const App: FC = () => {
   return (
-    <SafeAreaView>
+    <NavigationContainer>
       <StatusBar
         barStyle={'dark-content'}
       />
       <AppStack />
-    </SafeAreaView>
+    </NavigationContainer>
   )
 }
 
